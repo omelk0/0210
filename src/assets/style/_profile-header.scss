@@ -1,0 +1,66 @@
+.profile-header {
+    padding: 0 19px 0 20px;
+
+    &__image {
+        position: absolute;
+
+        img {
+            display: inline-block;
+            width: 124px;
+            height: 124px;
+            border-radius: 50%;
+        }
+    }
+
+    &__description {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #333;
+        margin-bottom: 2px;
+        margin-top: 6px;
+        margin-left: 135px;
+    }
+
+    &__position {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #808080;
+        margin-left: 135px;
+        margin-bottom: 5px;
+    }
+
+    &__quote {
+        background: #FFFBC8;
+        border: 1px solid #DADADA;
+        border-radius: 5px;
+        margin-left: 80px;
+        padding-left: 55px;
+
+        p {
+            color: #333;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            max-width: 201px;
+            padding-top: 6px;
+            padding-bottom: 8px;
+
+            @media(max-width:375px) {
+                font-size: 10px;
+                line-height: 15px;
+            }
+        }
+    }
+}

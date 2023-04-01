@@ -1,0 +1,108 @@
+.profile-services {
+    max-width: 354px;
+    margin-left: auto;
+    margin-top: 15px;
+    padding: 0 19px 0 20px;
+
+    h2 {
+        text-align: right;
+        margin-right: 29px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: #333333;
+        margin-bottom: 8px;
+    }
+
+    &__statistics {
+        padding: 15px 45px 15px 0;
+        border-bottom: 1px solid #DADADA;
+        border-top: 1px solid #DADADA;
+
+        @media(max-width:375px) {
+            padding: 15px 0;
+        }
+    }
+
+    &__statistics-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    &__statistics-name {
+        width: 90%;
+    }
+
+    &__statistics-line {
+        display: block;
+        width: 100%;
+        margin-bottom: 2px;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-radius: 0px 3px 3px 0px;
+        border-left: 1px solid rgba(51, 51, 51, 0.2);
+
+        &--1 {
+            background-color: #ACE2F8;
+        }
+
+        &--2 {
+            background-color: #ACE2F8;
+        }
+
+        &--3 {
+            background-color: #ACE2F8;
+        }
+    }
+
+    &__statistics-title {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 26px;
+        color: #333;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+    }
+
+    &__statistics-value {
+        margin-left: auto;
+    }
+
+    &__statistics-number {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        color: #333333;
+    }
+
+    &__total {
+        margin-top: 9px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    &__total-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333333;
+    }
+
+    &__total-number {
+        margin-left: auto;
+        padding: 0 45px 0 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 15px;
+        color: #333333;
+    }
+}

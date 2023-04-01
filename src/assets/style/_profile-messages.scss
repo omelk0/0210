@@ -1,0 +1,72 @@
+.profile-messages {
+    margin-top: 13px;
+
+    &__message {
+        padding: 0 19px 0 20px;
+    }
+
+    &__message-title {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 13px;
+    }
+
+    &__message-name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #333;
+        margin-right: 8px;
+    }
+
+    &__message-date {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 19px;
+        color: #808080;
+    }
+
+    &__message-text {
+        position: relative;
+        background: #F2FBFF;
+        border: 1px solid #C4CBCF;
+        -webkit-box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
+        box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
+        padding: 15px;
+        margin-bottom: 17px;
+
+        span {
+            display: inline-block;
+            color: #333333;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    &__triangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 11.5px 0 0 11.5px;
+        border-color: transparent transparent transparent #C4CBCF;
+        top: -12px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 0 0 9.8px;
+            border-color: transparent transparent transparent #F2FBFF;
+            top: -8.6px;
+            left: -9.8px;
+        }
+    }
+}
