@@ -28,36 +28,12 @@ export default {
     ProfileSend,
   },
   data() {
-    return {
-      currentUserName: "Oleksandr Melnychek",
-      currentDate: "",
-    };
+    return {};
   },
   computed: mapState(["messagesList"]),
   methods: {
-    getCurrentDate() {
-      const months = [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec",
-      ];
-      const date = new Date();
-      const day = date.getDate();
-      const month = months[date.getMonth()];
-      const year = date.getFullYear();
-      this.currentDate = `${day} ${month} ${year}`;
-    },
     updateReviewsList(text) {
-      this.getCurrentDate();
+      this.$store.dispatch("getCurrentDate");
       this.$store.dispatch("updateReviewsList", text);
     },
   },

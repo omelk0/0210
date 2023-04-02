@@ -5,6 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    currentUserName: "Oleksandr Melnychek",
+    currentDate: "",
     messagesList: [
       {
         name: "Samuel Jackson",
@@ -31,9 +33,33 @@ export default new Vuex.Store({
   mutations: {
     addReview(state, newReview) {
       state.messagesList.push(newReview);
+    },
+    getDate(state) {
+      const months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      const date = new Date();
+      const day = date.getDate();
+      const month = months[date.getMonth()];
+      const year = date.getFullYear();
+      state.currentDate = `${day} ${month} ${year}`;
     }
   },
   actions: {
+    getCurrentDate({ commit }) {
+      commit('getDate');
+    },
     updateReviewsList({ commit, state }, text) {
       if (!text || text.length === 0) {
         return;
